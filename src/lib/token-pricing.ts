@@ -46,7 +46,8 @@ const MODEL_PRICING: Record<string, ModelPricing> = {
   // apply the same rate for both input and output.
   'groq/llama-3.1-8b-instant': { inputPerMTok: 0.05, outputPerMTok: 0.05 },
   'groq/llama-3.3-70b-versatile': { inputPerMTok: 0.59, outputPerMTok: 0.59 },
-  'minimax/minimax-m2.1': { inputPerMTok: 0.3, outputPerMTok: 0.3 },
+  // MiniMax rates verified 2026-06 via Narev public pricing API.
+  'minimax/minimax-m2.1': { inputPerMTok: 0.3, outputPerMTok: 1.2 },
   'moonshot/kimi-k2.5': { inputPerMTok: 1.0, outputPerMTok: 1.0 },
   'ollama/deepseek-r1:14b': { inputPerMTok: 0.0, outputPerMTok: 0.0 },
   'ollama/qwen2.5-coder:14b': { inputPerMTok: 0.0, outputPerMTok: 0.0 },
