@@ -1168,9 +1168,9 @@ function QuickSpawnModal({
   const [spawnResult, setSpawnResult] = useState<any>(null)
 
   const models = [
-    { id: 'haiku', name: 'Claude Haiku', cost: '$0.25/1K', speed: 'Ultra Fast' },
+    { id: 'haiku', name: 'Claude Haiku', cost: '$1.00/1K', speed: 'Ultra Fast' },
     { id: 'sonnet', name: 'Claude Sonnet', cost: '$3.00/1K', speed: 'Fast' },
-    { id: 'opus', name: 'Claude Opus', cost: '$15.00/1K', speed: 'Slow' },
+    { id: 'opus', name: 'Claude Opus', cost: '$5.00/1K', speed: 'Slow' },
     { id: 'groq-fast', name: 'Groq Llama 8B', cost: '$0.05/1K', speed: '840 tok/s' },
     { id: 'groq', name: 'Groq Llama 70B', cost: '$0.59/1K', speed: '150 tok/s' },
     { id: 'deepseek', name: 'DeepSeek R1', cost: 'FREE', speed: 'Local' },
