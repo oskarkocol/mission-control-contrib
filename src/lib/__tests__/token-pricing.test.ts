@@ -23,6 +23,8 @@ describe('token pricing', () => {
     expect(getModelPricing('claude-3-5-haiku')).toMatchObject({ inputPerMTok: 0.8, outputPerMTok: 4.0 })
     // Sonnet 4.6 unchanged at $3/$15.
     expect(getModelPricing('claude-sonnet-4-6')).toMatchObject({ inputPerMTok: 3.0, outputPerMTok: 15.0 })
+    // MiniMax output rate verified 2026-06 via Narev.
+    expect(getModelPricing('minimax/minimax-m2.1')).toMatchObject({ inputPerMTok: 0.3, outputPerMTok: 1.2 })
   })
 
   it('falls back to conservative default pricing for unknown models', () => {
