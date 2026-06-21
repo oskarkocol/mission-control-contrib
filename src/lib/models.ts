@@ -18,7 +18,7 @@ export const MODEL_CATALOG: ModelConfig[] = [
   { alias: 'codex-mini', name: 'openai/codex-mini-latest', provider: 'openai', description: 'Codex Mini, optimized for code', costPer1k: 1.5 },
   // Google
   { alias: 'gemini-2.5-pro', name: 'google/gemini-2.5-pro', provider: 'google', description: 'Gemini 2.5 Pro', costPer1k: 1.25 },
-  { alias: 'gemini-2.5-flash', name: 'google/gemini-2.5-flash', provider: 'google', description: 'Gemini 2.5 Flash, fast', costPer1k: 0.15 },
+  { alias: 'gemini-2.5-flash', name: 'google/gemini-2.5-flash', provider: 'google', description: 'Gemini 2.5 Flash, fast', costPer1k: 0.3 },
   // Local / open-source
   { alias: 'deepseek', name: 'ollama/deepseek-r1:14b', provider: 'ollama', description: 'Local reasoning (free)', costPer1k: 0.0 },
   // Groq (hosted inference)
