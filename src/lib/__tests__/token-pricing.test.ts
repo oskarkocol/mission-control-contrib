@@ -44,9 +44,9 @@ describe('token pricing', () => {
 
   it('uses current MiniMax pricing, including cache rates', () => {
     expect(getModelPricing('minimax/MiniMax-M3')).toMatchObject({
-      inputPerMTok: 0.6,
-      outputPerMTok: 2.4,
-      cacheReadPerMTok: 0.12,
+      inputPerMTok: 0.3,
+      outputPerMTok: 1.2,
+      cacheReadPerMTok: 0.06,
       cacheWritePerMTok: null,
     })
     expect(getModelPricing('minimax/MiniMax-M2.7')).toMatchObject({
